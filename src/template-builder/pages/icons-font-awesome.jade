@@ -1,0 +1,30 @@
+//- =========================================================================================
+	File Name: icons-font-awesome.jade
+	Description: Font Awesome Icon
+	----------------------------------------------------------------------------------------
+	Item Name: Stack - Responsive Admin Template
+	Version: 1.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+	==========================================================================================
+
+block pageVars
+	- var pageTitle = "Font Awesome"
+	- var activeMenu = "icons-font-awesome"
+
+extends template
+
+append breadcrumbs
+	+breadcrumbs([{url:"index.html",name:"Home"}, {name:"Icons"}, {name:"Font Awesome"}])
+
+
+
+//- Include page content in page block
+append content
+	include ../contents/icons-font-awesome.html
+
+//- Page CSS
+//------------------------------
+//- Add Page specific CSS
+append pagecss
+	link(rel='stylesheet', type='text/css', href='../../../app-assets/fonts/font-awesome/css/font-awesome.min.css')

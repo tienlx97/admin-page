@@ -1,0 +1,54 @@
+//- =========================================================================================
+	File Name: chat-application.jade
+	Description: Chat application page layout.
+	----------------------------------------------------------------------------------------
+	Item Name: Stack - Responsive Admin Template
+	Version: 1.1
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+	==========================================================================================-//
+
+block pageVars
+	- var pageTitle    = "Chat Application"
+	- var pageSubTitle = "Chat application."
+	//- var description  = ""
+	- var activeMenu   = "chat-application"
+
+extends template
+
+append pageConfig
+	- var contentLayout = 'content-left-sidebar'
+	- var pageClass = 'chat-application'
+	- var sidebarFixed = true
+
+append footerConfig
+	- var footerType = 'navbar-fixed-bottom'
+
+block page-header
+
+//- Include chat content in page block
+append content
+	include ../contents/chat-application.html
+
+//- Include chat sidebar block
+append sidebar
+	include ../contents/chat-application-sidebar.html
+
+//- Page CSS
+//------------------------------
+
+//- Add custom page specific CSS
+append pagecss	
+	link(rel='stylesheet', type='text/css', href='../../../app-assets/fonts/simple-line-icons/style.min.css')
+	link(rel='stylesheet', type='text/css', href='../../../app-assets/css#{rtl}/pages/chat-application.css')
+
+//- Vendor JS
+//------------------------------
+//- Add vendor specific JS
+append vendorjs	
+
+//- Page JS
+//------------------------------
+//- Add custom page specific JS
+append pagejs	
+	script(src='../../../app-assets/js/scripts/pages/chat-application.js', type='text/javascript')

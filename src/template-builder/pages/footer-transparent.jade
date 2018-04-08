@@ -1,0 +1,49 @@
+//- =========================================================================================
+	File Name: footer-transparent.jade
+	Description: The transparent color footer with custom transparent color options & other styling options.
+	----------------------------------------------------------------------------------------
+	Item Name: Stack - Responsive Admin Template
+	Version: 1.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+	==========================================================================================-//
+
+block pageVars
+	- var pageTitle    = "Footer Transparent"
+	- var pageSubTitle = "Transparent color footer"
+	- var description  = "The footer transparent option set footer background same content background."
+	- var activeMenu   = "footer-transparent"
+
+extends template
+
+append footerConfig
+	- var footerColor = "footer-transparent"
+
+append breadcrumbs
+	+breadcrumbs([{url:"index.html",name:"Home"},{url:"#",name:"Footer"}, {name:"Footer Transparent"}])
+
+//- Include page content in page block
+append content
+	include ../contents/footer-transparent.html
+
+//- Vendor CSS
+//------------------------------
+//- Add Vendor specific CSS
+append vendorcss
+	link(rel='stylesheet', type='text/css', href='../../../app-assets/vendors/css/ui/prism.min.css')
+
+//- Page CSS
+//------------------------------
+//- Add custom page specific CSS
+append pagecss
+
+//- Vendor JS
+//------------------------------
+//- Add vendor specific JS
+append vendorjs
+	script(type='text/javascript' ,src='../../../app-assets/vendors/js/ui/prism.min.js')
+
+//- Page JS
+//------------------------------
+//- Add custom page specific JS
+append pagejs

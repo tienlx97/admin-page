@@ -1,0 +1,24 @@
+//- =========================================================================
+	File Name: component-tags.jade
+	Description: Small and adaptive tag for adding context to just about any content..
+	--------------------------------------------------------------------------
+	Item Name: Stack - Responsive Admin Template
+	Version: 1.1
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+	==========================================================================
+
+block pageVars
+	- var pageTitle   = "Tags"
+	- var pageSubTitle = "tag for adding context about any content"
+	- var description = "Labels are used to provide additional information about something."
+	- var activeMenu  = "component-tags"
+
+extends template
+
+append breadcrumbs
+	+breadcrumbs([{url:"index.html",name:"Home"},{url:"#",name:"Components"}, {name:"Tags"}])
+
+//- Include page content in page block
+append content
+	include ../contents/component-tags.html

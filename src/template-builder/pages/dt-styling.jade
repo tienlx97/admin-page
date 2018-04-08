@@ -1,0 +1,42 @@
+//- =========================================================================================
+	File Name:dt-styling.jade
+	Description: Easy to customise core stylesheets
+	----------------------------------------------------------------------------------------
+	Item Name: Stack - Responsive Admin Template
+	Version: 1.1
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+	==========================================================================================-//
+block pageVars
+	- var pageTitle    = "Styling DataTable"
+	- var pageSubTitle = "Easy to customise core stylesheets"
+	- var description  = "DataTables provides an easy to customise core stylesheet, which has a number of features that you can enable or disable as you required. Additionally there are a number of integration packages which can be used to fit DataTables into a site which uses some of the popular CSS libraries such as Twitter Bootstrap and Foundation. Or of course you can craft your own CSS to fit it into your site perfectly!"
+	- var activeMenu   = "dt-styling"
+
+extends template
+
+append breadcrumbs
+	+breadcrumbs([{url:"index.html",name:"Home"},{url:"#",name:"DataTables"}, {name:"Styling DataTable"}])
+
+
+
+//- Include page content in page block
+append content
+	include ../contents/dt-styling.html
+
+//- Page specific dependency
+//------------------------------
+
+//- Add vendor specific CSS
+append vendorcss
+	link(rel='stylesheet', type='text/css', href='../../../app-assets/vendors/css/tables/datatable/dataTables.bootstrap4.min.css')
+
+//- Add vendor specific JS
+append vendorjs
+	script(src='../../../app-assets/vendors/js/tables/jquery.dataTables.min.js', type='text/javascript')
+	script(src='../../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js', type='text/javascript')
+
+//- Add custom page specific JS
+append pagejs
+	//- CUstom JS
+	script(src='../../../app-assets/js/scripts/tables/datatables/datatable-styling.js', type='text/javascript')

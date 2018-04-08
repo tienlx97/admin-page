@@ -1,0 +1,53 @@
+//- =========================================================================================
+	File Name: email-application.jade
+	Description: Email application page layout.
+	----------------------------------------------------------------------------------------
+	Item Name: Stack - Responsive Admin Template
+	Version: 1.1
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+	==========================================================================================-//
+
+block pageVars
+	- var pageTitle    = "Email Application"
+	- var pageSubTitle = "Email application."
+	//- var description  = ""
+	- var activeMenu   = "email-application"
+
+extends template
+
+append pageConfig
+	- var contentLayout = 'content-left-sidebar'
+	- var pageClass = 'email-application'	
+
+append footerConfig
+	- var footerType = 'navbar-fixed-bottom'
+
+block page-header
+
+//- Include email content in page block
+append content
+	include ../contents/email-application.html
+
+//- Include email sidebar block
+append sidebar
+	include ../contents/email-application-sidebar.html
+
+//- Page CSS
+//------------------------------
+
+//- Add custom page specific CSS
+append pagecss	
+	link(rel='stylesheet', type='text/css', href='../../../app-assets/fonts/simple-line-icons/style.min.css')
+	link(rel='stylesheet', type='text/css', href='../../../app-assets/css#{rtl}/pages/email-application.css')
+
+//- Vendor JS
+//------------------------------
+//- Add vendor specific JS
+append vendorjs	
+
+//- Page JS
+//------------------------------
+//- Add custom page specific JS
+append pagejs	
+	script(src='../../../app-assets/js/scripts/pages/email-application.js', type='text/javascript')

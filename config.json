@@ -1,0 +1,208 @@
+{
+  "html"         : "html",
+  "starter_kit"  : "starter-kit",
+  "documentation": "documentation",
+  "assets"       : "assets",
+  "app_assets"   : "app-assets",
+  "destination": {
+    "js"     : "app-assets/js",
+    "css"    : "app-assets/css",
+    "css_rtl": "app-assets/css-rtl"
+  },
+  "source": {
+    "path"         : "src",
+    "js"           : "src/js",
+    "sass"         : "src/scss",
+    "template"     : "src/template-builder",
+    "documentation": "src/documentation"
+  },
+  "autoprefixerBrowsers": [
+    "Android 2.3",
+    "Android >= 4",
+    "Chrome >= 25",
+    "Firefox >= 15",
+    "Explorer >= 9",
+    "iOS >= 6",
+    "Opera >= 12",
+    "Safari >= 6"
+  ],
+  "vertical_menu_template": {
+    "dashboardRename": "dashboard-ecommerce.html",
+    "jadeSrc":[
+      "*.jade",
+      "!**/template.jade",
+      "!**/horizontal-layout-1-column.jade",
+      "!**/horizontal-nav-fixed.jade",
+      "!**/horizontal-nav-flipped.jade",
+      "!**/horizontal-nav-submenu-click.jade",
+      "!**/horizontal-nav-submenu-hover.jade",
+      "!**/horizontal-nav-light.jade",
+      "!**/horizontal-nav-dark.jade",
+      "!**/horizontal-nav-right-side-icons.jade",
+      "!**/horizontal-nav-no-dropdown.jade",
+      "!**/horizontal-nav-disabled.jade",
+      "!**/horizontal-nav-tags-pills.jade",
+      "!**/horizontal-nav-styling.jade"
+    ]
+  },
+  "vertical_menu_template_light":{
+    "dashboardRename": "dashboard-fitness.html",
+    "jadeSrc":[
+      "*.jade",
+      "!**/template.jade",
+      "!**/horizontal-layout-1-column.jade",
+      "!**/horizontal-nav-fixed.jade",
+      "!**/horizontal-nav-flipped.jade",
+      "!**/horizontal-nav-submenu-click.jade",
+      "!**/horizontal-nav-submenu-hover.jade",
+      "!**/horizontal-nav-light.jade",
+      "!**/horizontal-nav-dark.jade",
+      "!**/horizontal-nav-right-side-icons.jade",
+      "!**/horizontal-nav-no-dropdown.jade",
+      "!**/horizontal-nav-disabled.jade",
+      "!**/horizontal-nav-tags-pills.jade",
+      "!**/horizontal-nav-styling.jade"
+    ]
+  },
+  "vertical_menu_template_nav_dark":{
+    "dashboardRename": "dashboard-ecommerce.html",
+    "jadeSrc":[
+      "*.jade",
+      "!**/template.jade",
+      "!**/horizontal-layout-1-column.jade",
+      "!**/horizontal-nav-fixed.jade",
+      "!**/horizontal-nav-flipped.jade",
+      "!**/horizontal-nav-submenu-click.jade",
+      "!**/horizontal-nav-submenu-hover.jade",
+      "!**/horizontal-nav-light.jade",
+      "!**/horizontal-nav-dark.jade",
+      "!**/horizontal-nav-right-side-icons.jade",
+      "!**/horizontal-nav-no-dropdown.jade",
+      "!**/horizontal-nav-disabled.jade",
+      "!**/horizontal-nav-tags-pills.jade",
+      "!**/horizontal-nav-styling.jade"
+    ]
+  },
+  "vertical_menu_template_semi_dark":{
+    "dashboardRename": "dashboard-analytics.html",
+    "jadeSrc":[
+      "*.jade",
+      "!**/template.jade",
+      "!**/horizontal-layout-1-column.jade",
+      "!**/horizontal-nav-fixed.jade",
+      "!**/horizontal-nav-flipped.jade",
+      "!**/horizontal-nav-submenu-click.jade",
+      "!**/horizontal-nav-submenu-hover.jade",
+      "!**/horizontal-nav-light.jade",
+      "!**/horizontal-nav-dark.jade",
+      "!**/horizontal-nav-right-side-icons.jade",
+      "!**/horizontal-nav-no-dropdown.jade",
+      "!**/horizontal-nav-disabled.jade",
+      "!**/horizontal-nav-tags-pills.jade",
+      "!**/horizontal-nav-styling.jade"
+    ]
+  },
+  "vertical_overlay_menu_template":{
+    "dashboardRename": "dashboard-analytics.html",
+    "jadeSrc":[
+      "*.jade",
+      "!**/template.jade",
+      "!**/layout-2-columns.jade",
+      "!**/horizontal-layout-1-column.jade",
+      "!**/horizontal-nav-fixed.jade",
+      "!**/horizontal-nav-flipped.jade",
+      "!**/horizontal-nav-submenu-click.jade",
+      "!**/horizontal-nav-submenu-hover.jade",
+      "!**/horizontal-nav-light.jade",
+      "!**/horizontal-nav-dark.jade",
+      "!**/horizontal-nav-right-side-icons.jade",
+      "!**/horizontal-nav-no-dropdown.jade",
+      "!**/horizontal-nav-disabled.jade",
+      "!**/horizontal-nav-tags-pills.jade",
+      "!**/horizontal-nav-styling.jade"
+    ]
+  },
+  "vertical_modern_menu_template": {
+    "dashboardRename": "dashboard-ecommerce.html",
+    "jadeSrc":[
+      "*.jade",
+      "!**/template.jade",
+      "!**/horizontal-layout-1-column.jade",
+      "!**/horizontal-nav-fixed.jade",
+      "!**/horizontal-nav-flipped.jade",
+      "!**/horizontal-nav-submenu-click.jade",
+      "!**/horizontal-nav-submenu-hover.jade",
+      "!**/horizontal-nav-light.jade",
+      "!**/horizontal-nav-dark.jade",
+      "!**/horizontal-nav-right-side-icons.jade",
+      "!**/horizontal-nav-no-dropdown.jade",
+      "!**/horizontal-nav-disabled.jade",
+      "!**/horizontal-nav-tags-pills.jade",
+      "!**/horizontal-nav-styling.jade"
+    ]
+  },
+  "horizontal_menu_template":{
+    "dashboardRename": "dashboard-analytics.html",
+    "jadeSrc":[
+      "*.jade",
+      "!**/template.jade",
+      "!**/vertical-nav-fixed.jade",
+      "!**/vertical-nav-static.jade",
+      "!**/vertical-nav-light.jade",
+      "!**/vertical-nav-dark.jade",
+      "!**/vertical-nav-accordion.jade",
+      "!**/vertical-nav-collapsible.jade",
+      "!**/vertical-nav-flipped.jade",
+      "!**/vertical-nav-native-scroll.jade",
+      "!**/vertical-nav-right-side-icon.jade",
+      "!**/vertical-nav-bordered.jade",
+      "!**/vertical-nav-disabled-link.jade",
+      "!**/vertical-nav-styling.jade",
+      "!**/vertical-nav-tags-pills.jade",
+      "!**/layout-1-column.jade",
+      "!**/layout-2-columns.jade",
+      "!**/layout-content-left-sidebar.jade",
+      "!**/layout-content-left-sticky-sidebar.jade",
+      "!**/layout-content-right-sidebar.jade",
+      "!**/layout-content-right-sticky-sidebar.jade",
+      "!**/layout-fixed-navbar-footer.jade",
+      "!**/layout-fixed-navbar-navigation.jade",
+      "!**/layout-fixed-navbar.jade",
+      "!**/navbar-fixed-top.jade",
+      "!**/navbar-hide-on-scroll-bottom.jade",
+      "!**/navbar-hide-on-scroll-top.jade"
+    ]
+  },
+  "horizontal_menu_template_nav":{
+    "dashboardRename": "dashboard-ecommerce.html",
+    "jadeSrc":[
+      "*.jade",
+      "!**/template.jade",
+      "!**/vertical-nav-fixed.jade",
+      "!**/vertical-nav-static.jade",
+      "!**/vertical-nav-light.jade",
+      "!**/vertical-nav-dark.jade",
+      "!**/vertical-nav-accordion.jade",
+      "!**/vertical-nav-collapsible.jade",
+      "!**/vertical-nav-flipped.jade",
+      "!**/vertical-nav-native-scroll.jade",
+      "!**/vertical-nav-right-side-icon.jade",
+      "!**/vertical-nav-bordered.jade",
+      "!**/vertical-nav-disabled-link.jade",
+      "!**/vertical-nav-styling.jade",
+      "!**/vertical-nav-tags-pills.jade",
+      "!**/layout-1-column.jade",
+      "!**/layout-2-columns.jade",
+      "!**/layout-content-left-sidebar.jade",
+      "!**/layout-content-left-sticky-sidebar.jade",
+      "!**/layout-content-right-sidebar.jade",
+      "!**/layout-content-right-sticky-sidebar.jade",
+      "!**/layout-fixed-navbar-footer.jade",
+      "!**/layout-fixed-navbar-navigation.jade",
+      "!**/layout-fixed-navbar.jade",
+      "!**/navbar-fixed-top.jade",
+      "!**/navbar-hide-on-scroll-bottom.jade",
+      "!**/navbar-hide-on-scroll-top.jade"
+    ]
+  }  
+}

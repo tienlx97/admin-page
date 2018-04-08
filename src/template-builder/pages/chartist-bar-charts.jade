@@ -1,0 +1,46 @@
+//- =========================================================================================
+	File Name: chartist-bar-charts.jade
+	Description: Chartist bar chart examples.
+	----------------------------------------------------------------------------------------
+	Item Name: Stack - Responsive Admin Template
+	Version: 1.1
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+	==========================================================================================-//
+block pageVars
+	- var pageTitle    = "Chartist bar chart"
+	- var pageSubTitle = "Chartist bar chart examples"
+	- var description  = "A diagram in which the numerical values of variables are represented by the height or length of lines or rectangles of equal width."
+	- var activeMenu   = "chartist-bar-charts"
+
+extends template
+
+append breadcrumbs
+	+breadcrumbs([{url:"index.html",name:"Home"},{url:"#",name:"Chartist Charts"}, {name:"Chartist bar chart"}])
+
+//- Include page content in page block
+append content
+	include ../contents/chartist-bar-charts.html
+
+//- Vendor CSS
+//------------------------------
+//- Add vendor specific CSS
+append vendorcss
+	link(rel='stylesheet', type='text/css', href='../../../app-assets/vendors/css/charts/chartist.css')
+
+//- Vendor JS
+//------------------------------
+//- Add vendor specific JS
+append vendorjs
+	script(src='../../../app-assets/vendors/js/charts/chartist.min.js', type='text/javascript')
+
+//- Page JS
+//------------------------------
+//- Add custom page specific JS
+append pagejs
+	script(src='../../../app-assets/js/scripts/charts/chartist/bar/bi-polar-bar.js', type='text/javascript')
+	script(src='../../../app-assets/js/scripts/charts/chartist/bar/distributed-series.js', type='text/javascript')
+	script(src='../../../app-assets/js/scripts/charts/chartist/bar/horizontal-bar.js', type='text/javascript')
+	script(src='../../../app-assets/js/scripts/charts/chartist/bar/multi-column.js', type='text/javascript')
+	script(src='../../../app-assets/js/scripts/charts/chartist/bar/peak-circles.js', type='text/javascript')
+	script(src='../../../app-assets/js/scripts/charts/chartist/bar/stacked-bar.js', type='text/javascript')

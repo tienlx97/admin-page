@@ -1,0 +1,829 @@
+<section id="grid-options" class="row">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<h4 class="card-title">Grid options</h4>
+				<a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+				<div class="heading-elements">
+					<ul class="list-inline mb-0">
+						<li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+						<li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+						<li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+						<li><a data-action="close"><i class="ft-x"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="card-body collapse in collapse in">
+				<div class="card-block">
+					<p>While Bootstrap uses <code>em</code>s or <code>rem</code>s for defining most sizes, <code>px</code>s are used for grid breakpoints and container widths. This is because the viewport width is in pixels and does not change with the font size.</p>
+					<p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table.</p>
+					<table class="table table-bordered table-striped">
+						<thead>
+							<tr>
+								<th></th>
+								<th class="text-xs-center">
+									Extra small<br>
+									<small>&lt;544px</small>
+								</th>
+								<th class="text-xs-center">
+									Small<br>
+									<small>≥544px</small>
+								</th>
+								<th class="text-xs-center">
+									Medium<br>
+									<small>≥768px</small>
+								</th>
+								<th class="text-xs-center">
+									Large<br>
+									<small>≥992px</small>
+								</th>
+								<th class="text-xs-center">
+									Extra large<br>
+									<small>≥1200px</small>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th class="text-nowrap" scope="row">Grid behavior</th>
+								<td>Horizontal at all times</td>
+								<td colspan="4">Collapsed to start, horizontal above breakpoints</td>
+							</tr>
+							<tr>
+								<th class="text-nowrap" scope="row">Container width</th>
+								<td>None (auto)</td>
+								<td>576px</td>
+								<td>720px</td>
+								<td>940px</td>
+								<td>1140px</td>
+							</tr>
+							<tr>
+								<th class="text-nowrap" scope="row">Class prefix</th>
+								<td><code>.col-xs-</code></td>
+								<td><code>.col-sm-</code></td>
+								<td><code>.col-md-</code></td>
+								<td><code>.col-lg-</code></td>
+								<td><code>.col-xl-</code></td>
+							</tr>
+							<tr>
+								<th class="text-nowrap" scope="row"># of columns</th>
+								<td colspan="5">12</td>
+							</tr>
+							<tr>
+								<th class="text-nowrap" scope="row">Gutter width</th>
+								<td colspan="5">1.875rem / 30px (15px on each side of a column)</td>
+							</tr>
+							<tr>
+								<th class="text-nowrap" scope="row">Nestable</th>
+								<td colspan="5">Yes</td>
+							</tr>
+							<tr>
+								<th class="text-nowrap" scope="row">Offsets</th>
+								<td colspan="5">Yes</td>
+							</tr>
+							<tr>
+								<th class="text-nowrap" scope="row">Column ordering</th>
+								<td colspan="5">Yes</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="stacked-to-horizontal" class="row">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<h4 class="card-title">Stacked-to-horizontal</h4>
+				<a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+				<div class="heading-elements">
+					<ul class="list-inline mb-0">
+						<li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+						<li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+						<li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+						<li><a data-action="close"><i class="ft-x"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="card-body collapse in collapse in">
+				<div class="card-block">
+					<p>Using a single set of <code>.col-md-*</code> grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place
+						grid columns within any <code>.row</code>.</p>
+
+					<div class="bs-example">
+						<div class="row">
+							<div class="col-md-1">
+								<span>col-md-1</span>
+							</div>
+							<div class="col-md-1">
+								<span>col-md-1</span>
+							</div>
+							<div class="col-md-1">
+								<span>col-md-1</span>
+							</div>
+							<div class="col-md-1">
+								<span>col-md-1</span>
+							</div>
+							<div class="col-md-1">
+								<span>col-md-1</span>
+							</div>
+							<div class="col-md-1">
+								<span>col-md-1</span>
+							</div>
+							<div class="col-md-1">
+								<span>col-md-1</span>
+							</div>
+							<div class="col-md-1">
+								<span>col-md-1</span>
+							</div>
+							<div class="col-md-1">
+								<span>col-md-1</span>
+							</div>
+							<div class="col-md-1">
+								<span>col-md-1</span>
+							</div>
+							<div class="col-md-1">
+								<span>col-md-1</span>
+							</div>
+							<div class="col-md-1">
+								<span>col-md-1</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8">
+								<span>col-md-8</span>
+							</div>
+							<div class="col-md-4">
+								<span>col-md-4</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<span>col-md-4</span>
+							</div>
+							<div class="col-md-4">
+								<span>col-md-4</span>
+							</div>
+							<div class="col-md-4">
+								<span>col-md-4</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<span>col-md-6</span>
+							</div>
+							<div class="col-md-6">
+								<span>col-md-6</span>
+							</div>
+						</div>
+					</div>
+					<pre>
+						<code class="language-markup">
+							&lt;div class="row"&gt;
+								&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+								&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+								&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+								&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+								&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+								&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+								&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+								&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+								&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+								&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+								&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+								&lt;div class="col-md-1"&gt;col-md-1&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class="row"&gt;
+								&lt;div class="col-md-8"&gt;col-md-8&lt;/div&gt;
+								&lt;div class="col-md-4"&gt;col-md-4&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class="row"&gt;
+								&lt;div class="col-md-4"&gt;col-md-4&lt;/div&gt;
+								&lt;div class="col-md-4"&gt;col-md-4&lt;/div&gt;
+								&lt;div class="col-md-4"&gt;col-md-4&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class="row"&gt;
+								&lt;div class="col-md-6"&gt;col-md-6&lt;/div&gt;
+								&lt;div class="col-md-6"&gt;col-md-6&lt;/div&gt;
+							&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="mobile-and-desktop" class="row">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<h4 class="card-title">Mobile and desktop</h4>
+				<a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+				<div class="heading-elements">
+					<ul class="list-inline mb-0">
+						<li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+						<li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+						<li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+						<li><a data-action="close"><i class="ft-x"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="card-body collapse in collapse in">
+				<div class="card-block">
+					<p>Don’t want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding <code>.col-xs-*</code> and <code>.col-md-*</code> to your columns. See the example below for a better idea of how it all works.</p>
+
+					<div class="bs-example">
+						<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+						<div class="row">
+							<div class="col-xs-12 col-md-8">
+								<span>.col-xs-12 .col-md-8</span>
+							</div>
+							<div class="col-xs-6 col-md-4">
+								<span>.col-xs-6 .col-md-4</span>
+							</div>
+						</div>
+
+						<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+						<div class="row">
+							<div class="col-xs-6 col-md-4">
+								<span>.col-xs-6 .col-md-4</span>
+							</div>
+							<div class="col-xs-6 col-md-4">
+								<span>.col-xs-6 .col-md-4</span>
+							</div>
+							<div class="col-xs-6 col-md-4">
+								<span>.col-xs-6 .col-md-4</span>
+							</div>
+						</div>
+
+						<!-- Columns are always 50% wide, on mobile and desktop -->
+						<div class="row">
+							<div class="col-xs-6">
+								<span>.col-xs-6</span>
+							</div>
+							<div class="col-xs-6">
+								<span>.col-xs-6</span>
+							</div>
+						</div>
+					</div>
+					<pre>
+						<code class="language-markup">
+						&lt;!-- Stack the columns on mobile by making one full-width and the other half-width --&gt;
+						&lt;div class="row"&gt;
+							&lt;div class="col-xs-12 col-md-8"&gt;.col-xs-12 .col-md-8&lt;/div&gt;
+							&lt;div class="col-xs-6 col-md-4"&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+						&lt;/div&gt;
+						
+						&lt;!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop --&gt;
+						&lt;div class="row"&gt;
+							&lt;div class="col-xs-6 col-md-4"&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+							&lt;div class="col-xs-6 col-md-4"&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+							&lt;div class="col-xs-6 col-md-4"&gt;.col-xs-6 .col-md-4&lt;/div&gt;
+						&lt;/div&gt;
+						
+						&lt;!-- Columns are always 50% wide, on mobile and desktop --&gt;
+						&lt;div class="row"&gt;
+							&lt;div class="col-xs-6"&gt;.col-xs-6&lt;/div&gt;
+							&lt;div class="col-xs-6"&gt;.col-xs-6&lt;/div&gt;
+						&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="mobile-tablet-desktop" class="row">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<h4 class="card-title">Mobile, tablet, desktop</h4>
+				<a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+				<div class="heading-elements">
+					<ul class="list-inline mb-0">
+						<li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+						<li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+						<li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+						<li><a data-action="close"><i class="ft-x"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="card-body collapse in collapse in">
+				<div class="card-block">
+					<p>Build on the previous example by creating even more dynamic and powerful layouts with tablet <code>.col-sm-*</code> classes.</p>
+
+					<div class="bs-example">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-8">
+								<span>.col-xs-12 .col-sm-6 .col-md-8</span>
+							</div>
+							<div class="col-xs-6 col-sm-4">
+								<span>.col-xs-6 .col-sm-4</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 col-sm-4">
+								<span>.col-xs-6 .col-sm-4</span>
+							</div>
+							<div class="col-xs-6 col-sm-4">
+								<span>.col-xs-6 .col-sm-4</span>
+							</div>
+							<!-- Optional: clear the XS cols if their content doesn't match in height -->
+							<div class="clearfix hidden-sm-up"></div>
+							<div class="col-xs-6 col-sm-4">
+								<span>.col-xs-6 .col-sm-4</span>
+							</div>
+						</div>
+					</div>
+					<pre>
+						<code class="language-markup">
+						&lt;!-- Stack the columns on mobile by making one full-width and the other half-width --&gt;
+						&lt;div class="row"&gt;
+							&lt;div class="col-xs-12 col-sm-6 col-md-8"&gt;.col-xs-12 .col-sm-6 .col-md-8&lt;/div&gt;
+							&lt;div class="col-xs-6 col-sm-4"&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
+						&lt;/div&gt;
+						
+						&lt;!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop --&gt;
+						&lt;div class="row"&gt;
+							&lt;div class="col-xs-6 col-sm-4"&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
+							&lt;div class="col-xs-6 col-sm-4"&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
+							&lt;div class="col-xs-6 col-sm-4"&gt;.col-xs-6 .col-sm-4&lt;/div&gt;
+						&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="column-wrapping" class="row">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<h4 class="card-title">Column wrapping</h4>
+				<a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+				<div class="heading-elements">
+					<ul class="list-inline mb-0">
+						<li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+						<li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+						<li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+						<li><a data-action="close"><i class="ft-x"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="card-body collapse in collapse in">
+				<div class="card-block">
+					<p>If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.</p>
+
+					<div class="bs-example">
+						<div class="row">
+							<div class="col-xs-9">
+								<span>.col-xs-9</span>
+							</div>
+							<div class="col-xs-4">
+								<span>.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</span>
+							</div>
+							<div class="col-xs-6">
+								<span>.col-xs-6<br>Subsequent columns continue along the new line.</span>
+							</div>
+						</div>
+					</div>
+					<pre>
+					<code class="language-markup">
+						&lt;div class="row"&gt;
+							&lt;div class="col-xs-9"&gt;.col-xs-9&lt;/div&gt;
+							&lt;div class="col-xs-4"&gt;.col-xs-4&lt;br&gt;Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.&lt;/div&gt;
+							&lt;div class="col-xs-6"&gt;.col-xs-6&lt;br&gt;Subsequent columns continue along the new line.&lt;/div&gt;
+						&lt;/div&gt;
+					</code>
+				</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="responsive-column-resets" class="row">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<h4 class="card-title">Responsive column resets</h4>
+				<a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+				<div class="heading-elements">
+					<ul class="list-inline mb-0">
+						<li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+						<li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+						<li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+						<li><a data-action="close"><i class="ft-x"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="card-body collapse in">
+				<div class="card-block">
+					<p>With the four tiers of grids available you’re bound to run into issues where, at certain breakpoints, your columns don’t clear quite right as one is taller than the other. To fix that, use a combination of a <code>.clearfix</code> and our responsive
+						utility classes.</p>
+
+					<div class="bs-example">
+						<div class="row">
+							<div class="col-xs-6 col-sm-3">
+								<span>.col-xs-6 .col-sm-3</span>
+							</div>
+							<div class="col-xs-6 col-sm-3">
+								<span>.col-xs-6 .col-sm-3</span>
+							</div>
+
+							<!-- Add the extra clearfix for only the required viewport -->
+							<div class="clearfix hidden-sm-up"></div>
+
+							<div class="col-xs-6 col-sm-3">
+								<span>.col-xs-6 .col-sm-3</span>
+							</div>
+							<div class="col-xs-6 col-sm-3">
+								<span>.col-xs-6 .col-sm-3</span>
+							</div>
+						</div>
+					</div>
+					<pre>
+						<code class="language-markup">
+							&lt;div class="row"&gt;
+								&lt;div class="col-xs-6 col-sm-3"&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
+								&lt;div class="col-xs-6 col-sm-3"&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
+							
+								&lt;!-- Add the extra clearfix for only the required viewport --&gt;
+								&lt;div class="clearfix hidden-sm-up"&gt;&lt;/div&gt;
+							
+								&lt;div class="col-xs-6 col-sm-3"&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
+								&lt;div class="col-xs-6 col-sm-3"&gt;.col-xs-6 .col-sm-3&lt;/div&gt;
+							&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="responsive-breakpoints" class="row">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<h4 class="card-title">Responsive Breakpoints</h4>
+				<a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+				<div class="heading-elements">
+					<ul class="list-inline mb-0">
+						<li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+						<li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+						<li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+						<li><a data-action="close"><i class="ft-x"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="card-body collapse in">
+				<div class="card-block">
+					<p>In addition to column clearing at responsive breakpoints, you may need to reset offsets, pushes, or pulls.</p>
+
+					<div class="bs-example">
+						<div class="row">
+							<div class="col-sm-5 col-md-6">
+								<span>.col-sm-5 .col-md-6</span>
+							</div>
+							<div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+								<span>.col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0</span>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-6 col-md-5 col-lg-6">
+								<span>.col.col-sm-6.col-md-5.col-lg-6</span>
+							</div>
+							<div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">
+								<span>.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0</span>
+							</div>
+						</div>
+					</div>
+					<pre>
+						<code class="language-markup">
+						&lt;div class="row"&gt;
+							&lt;div class="col-sm-5 col-md-6"&gt;.col-sm-5 .col-md-6&lt;/div&gt;
+							&lt;div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0"&gt;.col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0&lt;/div&gt;
+						&lt;/div&gt;
+						
+						&lt;div class="row"&gt;
+							&lt;div class="col-sm-6 col-md-5 col-lg-6"&gt;.col.col-sm-6.col-md-5.col-lg-6&lt;/div&gt;
+							&lt;div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0"&gt;.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0&lt;/div&gt;
+						&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="Offsetting-columns" class="row">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<h4 class="card-title">Offsetting columns</h4>
+				<a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+				<div class="heading-elements">
+					<ul class="list-inline mb-0">
+						<li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+						<li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+						<li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+						<li><a data-action="close"><i class="ft-x"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="card-body collapse in">
+				<div class="card-block">
+					<p>Move columns to the right using <code>.offset-md-*</code> classes. These classes increase the left margin of a column by <code>*</code> columns. For example, <code>.offset-md-4</code> moves <code>.col-md-4</code> over four columns.</p>
+
+					<div class="bs-example">
+						<div class="row">
+							<div class="col-md-4">
+								<span>.col-md-4</span>
+							</div>
+							<div class="col-md-4 offset-md-4">
+								<span>.col-md-4 .offset-md-4</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 offset-md-3">
+								<span>.col-md-3 .offset-md-3</span>
+							</div>
+							<div class="col-md-3 offset-md-3">
+								<span>.col-md-3 .offset-md-3</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 offset-md-3">
+								<span>.col-md-6 .offset-md-3</span>
+							</div>
+						</div>
+					</div>
+					<pre>
+						<code class="language-markup">
+						&lt;div class="row"&gt;
+							&lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+							&lt;div class="col-md-4 offset-md-4"&gt;.col-md-4 .offset-md-4&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class="row"&gt;
+							&lt;div class="col-md-3 offset-md-3"&gt;.col-md-3 .offset-md-3&lt;/div&gt;
+							&lt;div class="col-md-3 offset-md-3"&gt;.col-md-3 .offset-md-3&lt;/div&gt;
+						&lt;/div&gt;
+						&lt;div class="row"&gt;
+							&lt;div class="col-md-6 offset-md-3"&gt;.col-md-6 .offset-md-3&lt;/div&gt;
+						&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="nesting-columns" class="row">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<h4 class="card-title">Nesting columns</h4>
+				<a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+				<div class="heading-elements">
+					<ul class="list-inline mb-0">
+						<li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+						<li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+						<li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+						<li><a data-action="close"><i class="ft-x"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="card-body collapse in">
+				<div class="card-block">
+					<p>To nest your content with the default grid, add a new <code>.row</code> and set of <code>.col-sm-*</code> columns within an existing <code>.col-sm-*</code> column. Nested rows should include a set of columns that add up to 12 or fewer (it is not
+						required that you use all 12 available columns).</p>
+
+					<div class="bs-example">
+						<div class="row">
+							<div class="col-sm-9">
+								<span>Level 1: .col-sm-9</span>
+								<div class="row">
+									<div class="col-xs-8 col-sm-6">
+										<span>Level 2: .col-xs-8 .col-sm-6</span>
+									</div>
+									<div class="col-xs-4 col-sm-6">
+										<span>Level 2: .col-xs-4 .col-sm-6</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<pre>
+						<code class="language-markup">
+						&lt;div class="row"&gt;
+							&lt;div class="col-sm-9"&gt;
+							Level 1: .col-sm-9
+							&lt;div class="row"&gt;
+								&lt;div class="col-xs-8 col-sm-6"&gt;
+								Level 2: .col-xs-8 .col-sm-6
+								&lt;/div&gt;
+								&lt;div class="col-xs-4 col-sm-6"&gt;
+								Level 2: .col-xs-4 .col-sm-6
+								&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="column-ordering" class="row">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<h4 class="card-title">Column ordering</h4>
+				<a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+				<div class="heading-elements">
+					<ul class="list-inline mb-0">
+						<li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+						<li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+						<li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+						<li><a data-action="close"><i class="ft-x"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="card-body collapse in">
+				<div class="card-block">
+					<p>Easily change the order of our built-in grid columns with <code>.push-md-*</code> and <code>.pull-md-*</code> modifier classes.</p>
+
+					<div class="bs-example">
+						<div class="row">
+							<div class="col-md-9 push-md-3">
+								<span>.col-md-9 .push-md-3</span>
+							</div>
+							<div class="col-md-3 pull-md-9">
+								<span>.col-md-3 .pull-md-9</span>
+							</div>
+						</div>
+					</div>
+					<pre>
+						<code class="language-markup">
+						&lt;div class="row"&gt;
+							&lt;div class="col-md-9 push-md-3"&gt;.col-md-9 .push-md-3&lt;/div&gt;
+							&lt;div class="col-md-3 pull-md-9"&gt;.col-md-3 .pull-md-9&lt;/div&gt;
+						&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="block" class="row">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<h4 class="card-title">Block</h4>
+				<a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+				<div class="heading-elements">
+					<ul class="list-inline mb-0">
+						<li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+						<li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+						<li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+						<li><a data-action="close"><i class="ft-x"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="card-body collapse in">
+				<div class="card-block">
+					<div class="bs-example">
+						<h5>Two Blocks <small class="text-muted"><i>.col-md-6</i></small></h5>
+						<div class="row">
+							<div class="col-md-6">
+								<span>50%</span>
+							</div>
+							<div class="col-md-6">
+								<span>50%</span>
+							</div>
+						</div>
+						<hr>
+						<h5>Three Blocks <small class="text-muted"><i>.col-md-4</i></small></h5>
+						<div class="row">
+							<div class="col-md-4">
+								<span>33%</span>
+							</div>
+							<div class="col-md-4">
+								<span>33%</span>
+							</div>
+							<div class="col-md-4">
+								<span>33%</span>
+							</div>
+						</div>
+						<hr>
+						<h5>Four Blocks <small class="text-muted"><i>.col-md-3</i></small></h5>
+						<div class="row">
+							<div class="col-md-3">
+								<span>25%</span>
+							</div>
+							<div class="col-md-3">
+								<span>25%</span>
+							</div>
+							<div class="col-md-3">
+								<span>25%</span>
+							</div>
+							<div class="col-md-3">
+								<span>25%</span>
+							</div>
+						</div>
+						<hr>
+						<h5>Six Blocks <small class="text-muted"><i>.col-md-2</i></small></h5>
+						<div class="row">
+							<div class="col-md-2">
+								<span>16.6%</span>
+							</div>
+							<div class="col-md-2">
+								<span>16.6%</span>
+							</div>
+							<div class="col-md-2">
+								<span>16.6%</span>
+							</div>
+							<div class="col-md-2">
+								<span>16.6%</span>
+							</div>
+							<div class="col-md-2">
+								<span>16.6%</span>
+							</div>
+							<div class="col-md-2">
+								<span>16.6%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="auto-responsive" class="row">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header">
+				<h4 class="card-title">Auto Responsive</h4>
+				<a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+				<div class="heading-elements">
+					<ul class="list-inline mb-0">
+						<li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+						<li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+						<li><a data-action="expand"><i class="ft-maximize"></i></a></li>
+						<li><a data-action="close"><i class="ft-x"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="card-body collapse in">
+				<div class="card-block">
+					<p>With <code>.col-sm-*</code>, <code>.col-md-*</code>, <code>.col-lg-*</code> classes, it can turn into responsive easily.</p>
+					<div class="bs-example">
+						<div class="row">
+							<div class="col-md-3">
+								<span class="text-xs-center">1</span>
+							</div>
+							<div class="col-md-3">
+								<span class="text-xs-center">2</span>
+							</div>
+							<div class="col-md-3">
+								<span class="text-xs-center">3</span>
+							</div>
+							<div class="col-md-3">
+								<span class="text-xs-center">4</span>
+							</div>
+							<div class="col-md-3">
+								<span class="text-xs-center">5</span>
+							</div>
+							<div class="col-md-3">
+								<span class="text-xs-center">6</span>
+							</div>
+							<div class="col-md-3">
+								<span class="text-xs-center">7</span>
+							</div>
+							<div class="col-md-3">
+								<span class="text-xs-center">8</span>
+							</div>
+							<div class="col-md-3">
+								<span class="text-xs-center">9</span>
+							</div>
+							<div class="col-md-3">
+								<span class="text-xs-center">10</span>
+							</div>
+							<div class="col-md-3">
+								<span class="text-xs-center">11</span>
+							</div>
+							<div class="col-md-3">
+								<span class="text-xs-center">12</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

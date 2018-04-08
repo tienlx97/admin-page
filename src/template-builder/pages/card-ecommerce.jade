@@ -1,0 +1,42 @@
+//- =========================================================================================
+	File Name: card-ecommerce.jade
+	Description: Advance shopping & ecommerce cards
+	----------------------------------------------------------------------------------------
+	Item Name: Stack - Responsive Admin Template
+	Version: 1.1
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+	==========================================================================================
+
+block pageVars
+	- var pageTitle   = "Advance E-commerce Cards"
+	- var pageSubTitle = "Extended default cards"
+	- var description = "Exteding default bootstrap card functionality."
+	- var activeMenu  = "card-ecommerce"
+
+extends template
+
+append breadcrumbs
+	+breadcrumbs([{url:"index.html",name:"Home"},{url:"#",name:"Components"}, {name:"E-commerce Cards"}])
+
+//- Include page content in page block
+append content
+	include ../contents/card-ecommerce.html
+
+
+//- Vendor JS
+//------------------------------
+//- Add vendor specific JS
+append vendorjs
+	//- Echarts JS
+	script(src='../../../app-assets/vendors/js/charts/echarts/echarts.js', type='text/javascript')
+
+//- Page JS
+//------------------------------
+//- Add custom page specific JS
+append pagejs
+	//- Advance cards JS
+	script(src='../../../app-assets/js/scripts/cards/card-ecommerce.js', type='text/javascript')
+
+append pagecss
+	link(rel='stylesheet', type='text/css', href='../../../app-assets/css#{rtl}/core/colors/palette-gradient.css')

@@ -1,0 +1,39 @@
+//- =========================================================================================
+	File Name:dt-basic-initialization.jade
+	Description: Basic initialisation of DataTables
+	----------------------------------------------------------------------------------------
+	Item Name: Stack - Responsive Admin Template
+	Version: 1.1
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+	==========================================================================================-//
+block pageVars
+	- var pageTitle    = "Basic DataTables"
+	- var pageSubTitle = "Basic initialisation of DataTables"
+	- var description  = "DataTables is very simple to use as a jQuery plug-in with a huge range of customisable option. The examples in this section demonstrate basic initialisation of DataTables and how it can be easily customised by passing an object with the options you want."
+	- var activeMenu   = "dt-basic-initialization"
+
+extends template
+
+append breadcrumbs
+	+breadcrumbs([{url:"index.html",name:"Home"},{url:"#",name:"DataTables"}, {name:"Basic DataTables"}])
+
+//- Include page content in page block
+append content
+	include ../contents/dt-basic-initialization.html
+
+//- Page specific dependency
+//------------------------------
+
+//- Add vendor specific CSS
+append vendorcss
+	link(rel='stylesheet', type='text/css', href='../../../app-assets/vendors/css/tables/datatable/dataTables.bootstrap4.min.css')
+
+//- Add vendor specific JS
+append vendorjs
+	script(src='../../../app-assets/vendors/js/tables/jquery.dataTables.min.js', type='text/javascript')
+	script(src='../../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js', type='text/javascript')
+
+//- Add custom page specific JS
+append pagejs
+	script(src='../../../app-assets/js/scripts/tables/datatables/datatable-basic.js', type='text/javascript')
