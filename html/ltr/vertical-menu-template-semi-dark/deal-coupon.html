@@ -44,6 +44,8 @@
 <!--  form extend -->
 <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/forms/extended/form-extended.css">
 <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/extensions/pace.css">
+<!-- deal coupon -->
+<link rel="stylesheet" type="text/css" href="../src/css/deal-coupon.css">
 </head>
 
 <body data-open="click" data-menu="vertical-menu" data-col="2-columns" class="vertical-layout vertical-menu 2-columns   menu-expanded fixed-navbar">
@@ -1679,61 +1681,53 @@
     <div class="content-wrapper">
       <div class="content-body">
        <!-- Typeahead js start -->
-<section class="typeahead" id="typeahead">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title">Typeahead</h4>
-                        <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
-                        <div class="heading-elements">
-                            <ul class="list-inline mb-0">
-                                <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
-                                <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
-                                <li><a data-action="expand"><i class="ft-maximize"></i></a></li>
-                                <li><a data-action="close"><i class="ft-x"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card-body collapse in">
-                        <div class="card-block">
-                            <div class="row">
-                                <div class="col-xl-12 col-lg-12">
-                                    <fieldset>
-                                        <h5>Bloodhound Engine</h5>
-                                        <p class="text-muted">For more advanced use cases, rather than implementing the source for your dataset yourself, you can take advantage of <code>Bloodhound</code>, the <code>typeahead.js</code> suggestion engine. <br>Bloodhound is stack, flexible, and offers advanced functionalities such as prefetching, intelligent caching, fast lookups, and backfilling with remote data.</p>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control typeahead-bloodhound" id="the-bloodhound" placeholder="Start Typing.." />
-                                        </div>
-                                    </fieldset>
-                                    <fieldset>
-                                        <h5>Multiple Datasets</h5>
-                                        <p class="text-muted">Multiple datasets give you visually separated sets of data inside Dropdown menu with <code>saperate titles</code>, managed in <code>templates</code> option. This looks like a <code>&lt;optgroup&gt;</code> titles in selects.</p>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control multiple-datasets" id="multiple-datasets" placeholder="NBA and NHL teams" />
-                                        </div>
-                                    </fieldset>
-                                    <fieldset>
-                                        <h5>Scrollable Dropdown Menu</h5>
-                                        <p class="text-muted">To change the height of your dropdown menu, just wrap your input in some <code>div</code> with <code>custom css</code> styles and change necessary css properties or change it in css directly.</p>
-                                        <div class="form-group scrollable-dropdown">
-                                            <input type="text" class="form-control scrollable-dropdown-menu" id="scrollable-dropdown-menu" placeholder="Countries" />
-                                        </div>
-                                    </fieldset>
-                                    <fieldset>
-                                        <h5>RTL Support</h5>
-                                        <p class="text-muted">Typeahead supports <code>RTL</code> also. Wrap your input in any div with <code>text-align: right;</code> property and add dir="rtl" to your input, now your dropdown menu is right aligned.</p>
-                                        <div class="form-group rtl-typeahead">
-                                            <input type="text" class="form-control rtl-support" dir="rtl" id="rtl-support" placeholder="States" />
-                                        </div>
-                                    </fieldset>
-                                </div>
-                            </div>
-                        </div>
+<section>
+    <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title" id="horz-layout-basic">ADD</h4>
+              <a class="heading-elements-toggle">
+                <i class="fa fa-ellipsis-v font-medium-3"></i>
+              </a>
+              <div class="heading-elements">
+                <ul class="list-inline mb-0">
+                  <li>
+                    <a data-action="collapse">
+                      <i class="ft-minus"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-action="reload">
+                      <i class="ft-rotate-cw"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-action="expand">
+                      <i class="ft-maximize"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-action="close">
+                      <i class="ft-x"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body">
+                <div class="form-group row">
+                    <!-- <label class="col-md-4 label-control">Original Price</label> -->
+                    <label class="col-md-1 label-control" style="text-align: right;" for="input-category-id">Search:</label>
+                    <div class="col-md-11">
+                      <!-- <input type="text" id="input-category-id" class="form-control" placeholder="Auto generate id" name="fname"> -->
+                      <input type="text" class="form-control typeahead" placeholder="Text input">                                    
                     </div>
                 </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
       </div>
     </div>
@@ -1758,16 +1752,22 @@
 
   <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js" type="text/javascript"></script>
  
-  <script src="../../../app-assets/vendors/js/forms/extended/typeahead/typeahead.bundle.min.js" type="text/javascript"></script>
-  <script src="../../../app-assets/vendors/js/forms/extended/typeahead/bloodhound.min.js" type="text/javascript"></script>
-  <script src="../../../app-assets/vendors/js/forms/extended/typeahead/handlebars.js" type="text/javascript"></script>  <!-- END PAGE VENDOR JS-->
+  <!-- <script src="../../../app-assets/vendors/js/forms/extended/typeahead/typeahead.bundle.min.js" type="text/javascript"></script> -->
+  <!-- <script src="../../../app-assets/vendors/js/forms/extended/typeahead/bloodhound.min.js" type="text/javascript"></script> -->
+  <!-- <script src="../../../app-assets/vendors/js/forms/extended/typeahead/handlebars.js" type="text/javascript"></script>  END PAGE VENDOR JS -->
   
   <!-- BEGIN STACK JS-->
 
   <script src="../../../app-assets/js/core/app-menu.js" type="text/javascript"></script>
   <script src="../../../app-assets/js/core/app.js" type="text/javascript"></script>
-  <script src="../../../app-assets/js/scripts/forms/extended/form-typeahead.js" type="text/javascript"></script>
-  <!-- <script src="../src/deal-coupon.js" type="text/javascript"></script>   -->
-</body>
+  <!-- <script src="../../../app-assets/js/scripts/forms/extended/form-typeahead.js" type="text/javascript"></script> -->
 
+  <!--  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+  <script src="../src/js/bloodhound.js"></script>
+  <script src="../src/js/typeahead.bundle.js"></script>	
+  <!--  -->
+  <script src="../src/deal-coupon.js" type="text/javascript"></script>  
+</body>
 </html>

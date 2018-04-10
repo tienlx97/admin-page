@@ -2,7 +2,7 @@
     'use strict';
     var data_cate_id = [];
     $(document).ready(function(){
-
+    var input_product_image=$("#add-product-image");
     var data_parent_id = [];
     var data_category_detail = []
     var config = {
@@ -20,10 +20,6 @@
     $("#cb-category-id").select2({
         data:data_cate_id
     });
-
-    // Currency in USD
-    $('.currency-mask').inputmask("$9999");
-    $('.number-mask').inputmask({ "alias": "decimal" , "radixPoint": "." });
 
     var loadDanhMuc2Select2 = function () {
         db.collection("DanhMuc")
@@ -134,11 +130,33 @@
 
     });
 
+    var ad = function(){
+        db.collection("SanPham").doc("bien").set({
+            HinhAnh2:"dsfsdf"
+        },{merge:true}).then(function() {
+          swal("Good job!", "You added successfully!", "success");
+     });
+    }
+
     $("#btn-add-product").on("click",function(){
+       // ad();
         // add data:
         if (checkProductInfo()) {
             addProduct2Firetore();
         }
+    });
+
+    
+
+    input_product_image.bind("input change paste keyup",function(){
+        var img = new Image()
+        img.src = input_product_image.val();
+        if (img.height>0) {
+            console.log("Real image url: "+img.height);
+            $("#img-add-product").attr("src", img.src);
+        } else {
+            console.log("invalid image url");
+        }      
     });
 
 });})(window, document, jQuery);
